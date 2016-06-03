@@ -1,8 +1,6 @@
 <div class="row" id="each-food-block">
   <div class="col-sm-12">
-    <input *ngIf="food.diet" type="checkbox" checked (click)="toggleDiet(false)"/>
-    <input *ngIf="!food.diet" type="checkbox" (click)="toggleDiet(true)"/>
-    <label id="food-name">{{ food.name }}</label>
+    <h4>{{ food.name }}</h4>
     <ul>
       <li>{{ "Calories: " + food.calories}}</li>
       <li>{{ "Details: " + food.details}}</li>

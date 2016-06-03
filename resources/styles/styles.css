@@ -1,13 +1,18 @@
-h1 {
-  color: #D4A190;
+#topHeader {
+  color: #bf8040;
+  text-align: center;
+  background-color: #d6d6c2;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header {
   text-align: center;
 }
 
-.selected {
-  color: blue;
+.selected #each-food-block {
+  background-color: #ccf2ff;
 }
 
 .food-form .row {
@@ -17,13 +22,17 @@ h1 {
 }
 
 .food-form .header {
-  background-color: yellow;
+  background-color: #ffcc66;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 #filter-form {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+#filter-form label {
+  font-size: 18px;
 }
 
 #each-food-block {
@@ -31,7 +40,7 @@ h1 {
   border-radius: 8px;
   border-style: outset;
   border-color: gray;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #add-button {

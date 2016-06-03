@@ -15,7 +15,7 @@ import { DietPipe } from './diet.pipe';
 export class FoodListComponent {
   public foodList: Food[];
   public selectedFood: Food;
-  public filterDiet: string = "diet";
+  public filterCalories: string = "all";
   foodSelected(clickedFood: Food): void {
     this.selectedFood = clickedFood;
   }
@@ -25,6 +25,6 @@ export class FoodListComponent {
     );
   }
   onChange(filterOption) {
-    this.filterDiet = filterOption;
+    this.filterCalories = filterOption;
   }
 }
