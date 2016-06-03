@@ -10,6 +10,11 @@ h1 {
 .food-form {
   margin-top: 30px;
   margin-bottom: 30px;
+  padding: 15px;
+}
+
+.food-form .row {
+  margin-bottom: 10px;
 }
 
 .add-button {
@@ -19,14 +24,11 @@ h1 {
   padding-bottom: 8px;
 }
 
-.row {
-  margin-bottom: 10px;
-}
-
 #each-food-block {
   border-width: medium;
   border-radius: 8px;
   border-style: outset;
   border-color: gray;
-  margin: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }

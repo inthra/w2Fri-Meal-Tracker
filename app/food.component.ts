@@ -8,8 +8,8 @@ import { Food } from './food.model';
   <div class="col-sm-5" id="each-food-block">
     <h4>{{ food.name }}</h4>
     <ul>
-      <li>{{ "Calories: " + food.calories + kCal}}</li>
-      <li>{{ "Details: $" + food.details}}</li>
+      <li>{{ "Calories: " + food.calories}}</li>
+      <li>{{ "Details: " + food.details}}</li>
     </ul>
   </div>
   `

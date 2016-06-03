@@ -1,12 +1,13 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { Food } from './food.model';
 import { FoodComponent } from './food.component';
+import { EditFoodInfoComponent } from './edit-food-info.component';
 
 
 @Component({
   selector: 'food-list',
   inputs: ['foodList'],
-  directives: [FoodComponent],
+  directives: [FoodComponent, EditFoodInfoComponent],
   template: `
   <div class="row">
     <food-display *ngFor="#currentFood of foodList"
@@ -15,6 +16,9 @@ import { FoodComponent } from './food.component';
       [food]="currentFood">
     </food-display>
   </div>
+
+  <edit-food-info *ngIf="selectedFood" [food]="selectedFood"></edit-food-info>
+
   `
 })
 export class FoodListComponent {
