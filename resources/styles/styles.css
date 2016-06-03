@@ -1,10 +1,10 @@
 h1 {
-  color: blue;
+  color: #D4A190;
   text-align: center;
 }
 
 .selected {
-  color: #22bdf0;
+  color: blue;
 }
 
 .food-form {
@@ -27,6 +27,6 @@ h1 {
   border-width: medium;
   border-radius: 8px;
   border-style: outset;
-  border-color: #D4A190;
+  border-color: gray;
   margin: 5px;
 }
