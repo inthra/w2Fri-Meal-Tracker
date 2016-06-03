@@ -1,20 +1,18 @@
-<div class="row food-form">
-  <div class="row" >
-    <div class="col-sm-5">
-      <h4>Edit food name: </h4>
-      <input [(ngModel)]="food.name" class="form-control"/>
-    </div>
-
-    <div class="col-sm-2">
-      <h4>Edit calories: </h4>
-      <input [(ngModel)]="food.calories" class="form-control col-sm-2"/>
-    </div>
+<div class="food-form">
+  <hr>
+  <h3 class="header">Edit Food:</h3>
+  <div class="row">
+    <h4>Name: </h4>
+    <input [(ngModel)]="food.name" class="form-control">
   </div>
 
   <div class="row">
-    <div class="col-sm-7">
-      <h4>Edit detail: </h4>
-      <textarea [(ngModel)]="food.details" class="form-control"></textarea>
-    </div>
+    <h4>Calories: </h4>
+    <input [(ngModel)]="food.calories" class="form-control col-sm-2">
+  </div>
+
+  <div class="row">
+    <h4>Detail: </h4>
+    <textarea [(ngModel)]="food.details" class="form-control" rows="4"></textarea>
   </div>
 </div>

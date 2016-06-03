@@ -1,0 +1,29 @@
+<div class="row" id="filter-form">
+  <div class="col-sm-4">
+    <select (change)="onChange($event.target.value)" class="form-control">
+      <option value="all">Show All</option>
+      <option value="diet">Show Diet</option>
+      <option value="notDiet">Show Not Diet</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-7">
+    <food-display *ngFor="#currentFood of foodList | diet:filterDiet"
+      (click)="foodSelected(currentFood)"
+      [class.selected]="currentFood === selectedFood"
+      [food]="currentFood">
+    </food-display>
+  </div>
+
+  <div class="col-sm-4 col-sm-offset-1">
+    <div class="row">
+      <new-food (onSubmitNewFood)="createFood($event)"></new-food>
+    </div>
+
+    <div class="row">
+      <edit-food-info *ngIf="selectedFood" [food]="selectedFood"></edit-food-info>
+    </div>
+  </div>
+</div>
