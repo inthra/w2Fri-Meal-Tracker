@@ -1,4 +1,4 @@
-# Independent Project: Meal Tracker
+# Independent Project: Meal Tracker - Angular2
 
 #### Food logging, Jun 3, 2016
 
