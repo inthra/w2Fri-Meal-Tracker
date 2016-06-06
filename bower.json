@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/inthra/w2Fri-Meal-Tracker",
   "ignore": [
     "**/.*",
     "node_modules",

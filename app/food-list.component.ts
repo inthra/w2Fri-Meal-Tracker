@@ -19,9 +19,9 @@ export class FoodListComponent {
   foodSelected(clickedFood: Food): void {
     this.selectedFood = clickedFood;
   }
-  createFood(name: string): void {
+  createFood(newFoodArray: string[]): void {
     this.foodList.push(
-      new Food(name, undefined, "", this.foodList.length)
+      new Food(newFoodArray[0], parseInt(newFoodArray[1]), newFoodArray[2], this.foodList.length)
     );
   }
   onChange(filterOption) {

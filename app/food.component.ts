@@ -8,7 +8,4 @@ import { Food } from './food.model';
 })
 export class FoodComponent {
   public food: Food;
-  toggleDiet(setState: boolean){
-    this.food.diet = setState;
-  }
 }

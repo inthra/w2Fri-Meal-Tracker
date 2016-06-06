@@ -27,6 +27,10 @@
   padding-bottom: 10px;
 }
 
+#new-food-form input {
+  margin-bottom: 5px;
+}
+
 #filter-form {
   margin-bottom: 10px;
   float: right;
